@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d1a1b5348.js" crossorigin="anonymous"></script>
+    <title>Zeamsone</title>
+    <style>
+        * {
+            font-family: Arial;
+            background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .navbar-nav {
+                display: inline-block;
+                float: none;
+                vertical-align: top;
+                width: 100% !important;
+            }
+
+            .navbar .navbar-collapse {
+                text-align: center;
+            }
+        }
+
+
+        /* animacja podkreslenia */
+        @media (min-width: 768px) {
+            [class*="nav-item"] {
+                border-bottom: 0.1em solid transparent;
+            }
+
+            [class*="nav-item"]:hover {
+                transition: 0.5s;
+                border-bottom: 0.1em solid #696969;
+            }
+        }
+
+        /* animacja zmiany tla po najechaniu */
+        @media (max-width: 768px) {
+            [class*="nav-link"] {
+                border: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            [class*="nav-link"]:hover {
+                background-color: grey !important;
+
+            }
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .napis {
+            letter-spacing: 10px;
+        }
+
+        .napis2 {
+            letter-spacing: 4px;
+        }
+
+        @media (min-width: 768px) {
+            .dom {
+                border-bottom: 0.1em solid #696969;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row sticky-top bg-transparent ps-3 pe-3">
+            <nav class="navbar navbar-expand-md navbar-dark bg-transparent p-0">
+                <div class="container-fluid bg-transparent">
+                    <a class="navbar-brand col-xl-3 col-md-4 col-8 bg-transparent" href="zeamsOneToLubia.html"><img
+                            class="img-fluid p-3 bg-transparent" src="zeamslogo.png" alt="LOGO"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navTg"
+                        aria-controls="navTg" aria-expanded="false" aria-label="Toggle navigation"
+                        style="background-color:rgba(181, 181, 181, 0.2)">
+                        <span class="navbar-toggler-icon bg-transparent">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end bg-transparent" id="navTg">
+                        <ul class="napis2 navbar-nav me-0 mb-2 mb-md-0 bg-transparent">
+                            <li class="nav-item text-white ps-md-3 pe-md-3 bg-transparent">
+                                <a class="nav-link pt-md-3 pb-md-3 pb-4 pt-4 bg-transparent" style="font-weight: 800;"
+                                    href="zeamsOneToLubia.html">HOME</a>
+                            </li>
+                            <li class="dom nav-item ps-md-3 pe-md-3 bg-transparent">
+                                <a class="nav-link pt-md-3 pb-md-3 pb-4 pt-4 bg-transparent" style="font-weight: 800;"
+                                    href="zeamsUbrania.html">UBRANIA</a>
+                            </li>
+                            <li class="nav-item ps-md-3 pe-md-3 bg-transparent">
+                                <a class="nav-link pt-md-3 pb-md-3 pb-4 pt-4 bg-transparent" style="font-weight: 800;"
+                                    href="zeamsKoncerty.html">KONCERTY</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="row d-flex justify-content-center mb-md-3 mb-5">
+            <div class="col-md-6 col-xxl-4 col-12 pe-0 ps-xxl-0">
+                <div id="carousel1" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="KoszulkaDark.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="koszulka2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev type=" button" data-bs-target="#carousel1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-transparent text-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-transparent" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-4 col-12 ps-0 pe-0">
+                <div class="container-fluid text-md-start text-center h-100 d-flex flex-column align-items-md-start justify-content-md-center justify-content-center align-items-center pt-md-0 pt-3">
+                    <div class="text-white fw-bold h3 ">UNIWERSUM T-SHIRT BLACK</div>
+                    <div class="text-white fw-bold h3 ">99.99zł</div>
+                    <button class="btn btn-dark btn-sm text-white fw-bold text-center" type="buttton">ZOBACZ WIĘCEJ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mb-md-3 mb-5">
+            <div class="col-md-6 col-xxl-4 col-12 pe-0 ps-xxl-0">
+                <div id="carousel2" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="koszulkaWhite.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="koszulka.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev type=" button" data-bs-target="#carousel2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-transparent text-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-transparent" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-4 col-12 ps-0 pe-0">
+                <div class="container-fluid text-md-start text-center h-100 d-flex flex-column align-items-md-start justify-content-md-center justify-content-center align-items-center pt-md-0 pt-3">
+                    <div class="text-white fw-bold h3 ">UNIWERSUM T-SHIRT WHITE</div>
+                    <div class="text-white fw-bold h3 ">99.99zł</div>
+                    <button class="btn btn-dark btn-sm text-white fw-bold text-center" type="buttton">ZOBACZ WIĘCEJ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mb-md-3 mb-5">
+            <div class="col-md-6 col-xxl-4 col-12 pe-0 ps-xxl-0">
+                <div id="carousel3" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="blz.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="bluza.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev type=" button" data-bs-target="#carousel3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-transparent text-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-transparent" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-4 col-12 ps-0 pe-0">
+                <div class="container-fluid text-md-start text-center h-100 d-flex flex-column align-items-md-start justify-content-md-center justify-content-center align-items-center pt-md-0 pt-3">
+                    <div class="text-white fw-bold h3 ">UNIWERSUM HOODIE</div>
+                    <div class="text-white fw-bold h3 ">189.99zł</div>
+                    <button class="btn btn-dark btn-sm text-white fw-bold text-center" type="buttton">ZOBACZ WIĘCEJ</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div class="row container-fluid d-flex justify-content-center pt-5 mt-5 mb-4 m-0">
+            <p class="text-center fw-bold text-white" style="font-size: 10px;">CINCIOREK 2K22 &#169</p>
+          </div>
+
+
+        <div class="row fixed-bottom bg-transparent mb-5">
+            <div class="col-lg-2 col-md-3 d-md-flex d-none bg-transparent justify-content-center align-items-center p-0"
+                style="max-width: 13em;">
+                <img class="img-fluid bg-transparent" src="zeamsone_1white.gif" alt="gif">
+            </div>
+            <div
+                class="col-lg-3 col-md-4 justify-content-between align-items-center col d-md-flex d-none bg-transparent p-0">
+                <div class="container-fluid d-flex justify-content-start align-items-center bg-transparent p-0">
+                    <a class="bg-transparent text-decoration-none pe-4"
+                        href="https://open.spotify.com/artist/1FdfWn1DrRwWDtRK8faYKY">
+                        <span class="ikonka d-flex justify-content-center align-items-center bg-transparent"
+                            style="height: 60px; width: 60px;">
+                            <i style="font-size: 2em;" class="fab fa-spotify text-white bg-transparent"></i>
+                        </span>
+                    </a>
+                    <a class="bg-transparent text-decoration-none ps-2 pe-2"
+                        href="https://music.apple.com/us/artist/zeamsone/1357590772">
+                        <span class="ikonka d-flex justify-content-center align-items-center bg-transparent"
+                            style="height: 60px; width: 60px;">
+                            <i style="font-size: 2em;" class="fab fa-apple text-white bg-transparent"></i>
+                        </span>
+                    </a>
+                    <a class="bg-transparent text-decoration-none ps-4" href="https://www.youtube.com/c/ZeamsOne">
+                        <span class="ikonka d-flex justify-content-center align-items-center bg-transparent"
+                            style="height: 60px; width: 60px;">
+                            <i style="font-size: 2em;" class="fa-brands fa-youtube text-white bg-transparent"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

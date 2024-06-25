@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/6d1a1b5348.js" crossorigin="anonymous"></script>
+  <title>Zeamsone</title>
+  <style>
+    * {
+      font-family: Arial;
+      background-color: black;
+    }
+
+    /* wysrodkowanie menu na malym ekranie */
+    @media (max-width: 768px) {
+      .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        width: 100% !important;
+      }
+
+      .navbar .navbar-collapse {
+        text-align: center;
+      }
+    }
+
+
+    /* animacja podkreslenia */
+    @media (min-width: 768px) {
+      [class*="nav-item"] {
+        border-bottom: 0.1em solid transparent;
+      }
+
+      [class*="nav-item"]:hover {
+        transition: 0.5s;
+        border-bottom: 0.1em solid #696969;
+      }
+    }
+
+    /* animacja zmiany tla po najechaniu */
+    @media (max-width: 768px) {
+      [class*="nav-link"] {
+        border: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      [class*="nav-link"]:hover {
+        background-color: grey !important;
+
+      }
+    }
+
+    .navbar a {
+      color: white !important;
+    }
+
+    .moj {
+      transition: 0.3s;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      font-size: 0.6cm;
+      padding: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 8px;
+    }
+
+    .moj:hover {
+      transition: 0.3s;
+      background-color: black;
+      color: white;
+    }
+
+    .mojkontener {
+      padding-top: 5px;
+      text-align: center;
+    }
+
+    .napis {
+      letter-spacing: 10px;
+    }
+
+    .napis2 {
+      letter-spacing: 4px;
+    }
+
+    /* @media (max-width: 768px) {
+      iframe {
+        width: 97% !important;
+      }
+    } */
+
+    .najechanie img {
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+
+    .najechanie img:hover {
+      transition: 0.5s;
+      opacity: 1;
+    }
+
+    .ikonka {
+      transition: 0.5s;
+      background-color: rgba(0, 0, 0, 0.0);
+      border-radius: 50%;
+    }
+
+    .ikonka:hover {
+      transition: 0.5s;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    @media (min-width: 768px) {
+      .dom {
+        border-bottom: 0.1em solid #696969;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row sticky-top bg-transparent ps-3 pe-3">
+      <nav class="navbar navbar-expand-md navbar-dark bg-transparent p-0">
+        <div class="container-fluid bg-transparent">
+          <a class="navbar-brand col-xl-3 col-md-4 col-8 bg-transparent" href="zeamsOneToLubia.html"><img
+              class="img-fluid p-3 bg-transparent" src="zeamslogo.png" alt="LOGO"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navTg"
+            aria-controls="navTg" aria-expanded="false" aria-label="Toggle navigation"
+            style="background-color:rgba(181, 181, 181, 0.2)">
+            <span class="navbar-toggler-icon bg-transparent">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end bg-transparent" id="navTg">
+            <ul class="napis2 navbar-nav me-0 mb-2 mb-md-0 bg-transparent">
+              <li class="dom nav-item text-white ps-md-3 pe-md-3 bg-transparent">
+                <a class="nav-link pt-md-3 pb-md-3 pb-4 pt-4 bg-transparent" style="font-weight: 800;"
+                  href="zeamsOneToLubia.html">HOME</a>
+              </li>
+              <li class="nav-item ps-md-3 pe-md-3 bg-transparent">
+                <a class="nav-link pt-md-3 pb-md-3 pb-4 pt-4 bg-transparent" style="font-weight: 800;"
+                  href="zeamsUbrania.html">UBRANIA</a>
+              </li>
+              <li class="nav-item ps-md-3 pe-md-3 bg-transparent">
+                <a class="nav-link pt-md-3 pb-md-3 pb-4 pt-4 bg-transparent" style="font-weight: 800;"
+                  href="zeamsKoncerty.html">KONCERTY</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6 col-xxl-4 col-12 pe-0 ps-xxl-0">
+        <a href="https://preorder.pl/muzyka/polska/uniwersum-ltd"><img style="object-fit: cover;" class="img-fluid"
+            src="plytawlepy.png" alt="plyta"></a>
+      </div>
+      <div class="col-md-6 col-xxl-4 col-12 ps-0 pe-0 d-flex align-items-center">
+        <div class="container-fluid pt-md-0 pt-4">
+          <div class="container-fluid row m-0 p-0">
+            <div class="col container-fluid text-center">
+              <div class="container d-flex align-items-end justify-content-center">
+                <h3 class="text-white fw-bold">ZAMÓW PREORDER UNIWERSUM</h3>
+              </div>
+              <div class="container-fluid d-flex align-items-start justify-content-center">
+                <h6 class="text-white h-auto m-0 pb-4">PREORDER UNIWERSUM (CD + 2 BONUS TRACKI, WLEPY, AUTOGRAF)</h6>
+              </div>
+              <div class="container-fluid p-0">
+                <div class="progress" style="height: 2px;">
+                  <div class="progress-bar bg-white" role="progressbar" style="width: 100%; height: 2px;"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" row d-flex align-items-center">
+            <div class="col container-fluid d-flex justify-content-center">
+              <h2 class="fw-bold text-white pt-4">49,99zł</h2>
+            </div>
+            <span class="mojkontener fw-bold">
+              <a href="https://preorder.pl/zeamsone-2"><button class="moj"
+                  style="font-weight: bolder;">ZAMÓW</button></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-3 d-none d-md-block d-xxl-flex justify-content-center">
+      <div class="col-md-6 col-xxl-4 col-12 pe-0 ps-xxl-0 d-flex justify-content-between">
+        <div class="container pe-2 ps-0 d-flex justify-content-start">
+          <a href="https://preorder.pl/muzyka/zestawy/zestaw-uniwersum-deluxe"><img class="img-fluid" src="koszulka.png"
+              alt="koszulka"></a>
+        </div>
+        <div class="container ps-1 pe-1">
+          <a href="https://preorder.pl/muzyka/zestawy/zestaw-uniwersum-deluxe-2"><img class="img-fluid"
+              src="koszulka2.png" alt="koszulka"></a>
+        </div>
+        <div class="container ps-2 pe-0 d-flex justify-content-end">
+          <a href="https://preorder.pl/muzyka/zestawy/zestaw-uniwersum-deluxe-3"><img class="img-fluid" src="bluza.png"
+              alt="koszulka"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-4 col-12 ps-0 pe-0">
+
+      </div>
+    </div>
+
+
+
+
+    <div class="najechanie row mt-5 pt-5 ps-md-5 pe-md-5">
+      <div class="col-md-6 col-12 p-0 pe-md-3">
+        <p class="napis text-white fw-bold pb-5 text-center text-xl-start m-0 p-0">NAJNOWSZY KLIP</p>
+        <div class="container-fluid d-md-flex justify-content-md-center p-md-0">
+        <div class="ratio ratio-16x9 mx-auto">
+          <iframe src="https://www.youtube.com/embed/DhwwWiCIszo" title="YouTube video" allowfullscreen></iframe>
+        </div>
+      </div>
+        <p class="napis text-white fw-bold text-center text-lg-start pb-5 pt-5 m-0">INNE PŁYTY</p>
+
+        <!-- <div class="col-12 pb-2 ps-1 ps-md-0 pe-1 pe-md-0 d-flex justify-content-between">
+          <div class="container pe-2 ps-0 d-flex justify-content-start">
+            <a href="https://baisel.pl/rap-hip-hop/131-777-wersja-podstawowa-5903205170996.html"><img class="img-fluid"
+                src="777.png" alt="koszulka"></a>
+          </div>
+          <div class="container ps-1 pe-1">
+            <a href="https://baisel.pl/trap/132-hundred-bands-wersja-podstawowa-5903205134288.html"><img
+                class="img-fluid" src="hb.png" alt="koszulka"></a>
+          </div>
+          <div class="container ps-2 pe-0 d-flex justify-content-end">
+            <a href="https://baisel.pl/rap-hip-hop/3763-734-guitars--9116379202172.html"><img class="img-fluid"
+                src="734.png" alt="koszulka"></a>
+          </div>
+        </div> -->
+
+          <div class="container-fluid row pb-2 ps-0 pe-0 m-0">
+          <div class="container-fluid col-md-4 col-12 ps-md-0 pe-md-2 p-0">
+            <div class="container d-md-flex justify-content-md-center p-md-0 pb-2">
+            <a href="https://baisel.pl/rap-hip-hop/131-777-wersja-podstawowa-5903205170996.html"><img class="img-fluid"
+                src="777.png" alt="koszulka"></a>
+              </div>
+          </div>
+          <div class="container-fluid col-md-4 col-12 ps-md-1 pe-md-1 p-0">
+            <div class="container d-md-flex justify-content-md-center p-md-0 pt-1 pb-1">
+            <a href="https://baisel.pl/trap/132-hundred-bands-wersja-podstawowa-5903205134288.html"><img
+                class="img-fluid" src="hb.png" alt="koszulka"></a>
+              </div>
+          </div>
+          <div class="container-fluid col-md-4 col-12 ps-md-2 pe-md-0 p-0">
+            <div class="container d-md-flex justify-content-md-center p-md-0 pt-2">
+            <a href="https://baisel.pl/rap-hip-hop/3763-734-guitars--9116379202172.html"><img class="img-fluid"
+                src="734.png" alt="koszulka"></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="container-fluid row p-1 p-md-0 m-0">
+          <div class="container-fluid col-md-6 col-12 p-0 pe-md-2 mb-md-0 mb-1">
+            <a href="https://preorder.pl/zeamsone-2"><img class="img-fluid" src="wisiorCzarny.jpeg" alt="1"></a>
+          </div>
+          <div class="container-fluid col-md-6 col-12 p-0 ps-md-2 mt-md-0 mt-1">
+            <a href="https://preorder.pl/zeamsone-2"><img class="img-fluid" src="WisiorBialy.jpeg" alt="1"></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-12 p-0 ps-md-3">
+        <p class="napis text-white fw-bold text-center text-xl-end pb-4 pt-md-0 pt-4 m-0 mb-md-3">ZAMÓW PREORDER UNIWERSUM</p>
+        <div class="container-fluid row p-1 pb-0 p-md-0 m-0">
+          <div class="container-fluid col-md-6 col-12 p-0 pe-md-2 mt-md-0 mt-1">
+            <a href="https://preorder.pl/on/koszulki/t-shirt-meski/uniwersum-t-shirt-white"><img class="img-fluid"
+                src="koszulkaWhite.jpeg" alt="1"></a>
+          </div>
+          <div class="container-fluid col-md-6 col-12 p-0 ps-md-2 mt-md-0 mt-1">
+            <a href="https://preorder.pl/on/koszulki/t-shirt-meski/uniwersum-t-shirt-black"><img class="img-fluid"
+                src="KoszulkaDark.jpeg" alt="1"></a>
+          </div>
+        </div>
+
+        <div class="container-fluid text-center col-12 mt-md-2 mt-0 p-1 p-md-0">
+          <a href="https://preorder.pl/on/koszulki/t-shirt-meski/uniwersum-hoodie"><img class="img-fluid" src="blz.jpeg"
+              alt="1"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row container-fluid d-flex justify-content-center pt-5 mt-5 mb-4 m-0">
+      <p class="text-center fw-bold text-white" style="font-size: 10px;">CINCIOREK 2K22 &#169</p>
+    </div>
+
+    <div class="row fixed-bottom bg-transparent mb-5">
+      <div class="col-lg-2 col-md-3 d-md-flex d-none bg-transparent justify-content-center align-items-center p-0"
+        style="max-width: 13em;">
+        <img class="img-fluid bg-transparent" src="zeamsone_1white.gif" alt="gif">
+      </div>
+      <div class="col-lg-3 col-md-4 justify-content-between align-items-center col d-md-flex d-none bg-transparent p-0">
+        <div class="container-fluid d-flex justify-content-start align-items-center bg-transparent p-0">
+          <a class="bg-transparent text-decoration-none pe-4"
+            href="https://open.spotify.com/artist/1FdfWn1DrRwWDtRK8faYKY">
+            <span class="ikonka d-flex justify-content-center align-items-center" style="height: 60px; width: 60px;">
+              <i style="font-size: 2em;" class="fab fa-spotify text-white bg-transparent"></i>
+            </span>
+          </a>
+          <a class="bg-transparent text-decoration-none ps-2 pe-2"
+            href="https://music.apple.com/us/artist/zeamsone/1357590772">
+            <span class="ikonka d-flex justify-content-center align-items-center" style="height: 60px; width: 60px;">
+              <i style="font-size: 2em;" class="fab fa-apple text-white bg-transparent"></i>
+            </span>
+          </a>
+          <a class="bg-transparent text-decoration-none ps-4" href="https://www.youtube.com/c/ZeamsOne">
+            <span class="ikonka d-flex justify-content-center align-items-center" style="height: 60px; width: 60px;">
+              <i style="font-size: 2em;" class="fa-brands fa-youtube text-white bg-transparent"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="d-flex bg-transparent ps-4 pb-4" style="height: 110px;">
+      <img class="img-fluid bg-transparent" src="zeamsone_1white.gif" alt="gif">
+    </div> -->
+
+    <!-- <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <p class="napis text-white fw-bold pb-2 text-center text-lg-start m-0 p-0">NAJNOWSZY KLIP</p>
+        </div>
+        <div class="col-6">
+          <p class="napis text-white fw-bold text-center text-lg-end pb-2 pt-md-0 pt-3">ZAMÓW PREORDER UNIWERSUM</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+
+            <iframe style="width: 100%;height: 100%;position: relative;" src="https://www.youtube.com/embed/DhwwWiCIszo" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="col-6">
+          <div class="container-fluid row p-1 p-md-0 m-0">
+            <div class="container-fluid col-md-6 col-12 p-0 pe-md-2">
+              <img class="img-fluid" src="koszulkaWhite.jpeg" alt="1">
+            </div>
+            <div class="container-fluid col-md-6 col-12 p-0 ps-md-2">
+              <img class="img-fluid" src="KoszulkaDark.jpeg" alt="1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
